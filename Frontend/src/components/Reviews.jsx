@@ -1,7 +1,7 @@
 import { useState, useEffect,useContext } from "react";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
-import { AuthContext } from "./components/AuthContext";
+import { AuthContext } from "./AuthContext";
 import toast from "react-hot-toast";
 
 const Reviews = ({ reviews, setReviews, id }) => {
