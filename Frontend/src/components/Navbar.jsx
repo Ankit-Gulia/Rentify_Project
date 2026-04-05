@@ -13,7 +13,7 @@ const Navbar = () => {
   const { user, setUser ,loading } = useContext(AuthContext);
 
   const handleLogout = async() => {
-    let res = await axios.post('https://rentify-project-1.onrender.com/logout',{}, {withCredentials: true});
+    let res = await axios.post('https://rentify-project-sw8s.onrender.com/logout',{}, {withCredentials: true});
     setUser(null);
     toast.success(res.data.message);
     navigate("/listing");

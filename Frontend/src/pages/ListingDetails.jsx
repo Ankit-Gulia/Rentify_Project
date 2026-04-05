@@ -17,7 +17,7 @@ function ListingDetails() {
 
   const handleDelete = async () => {
     try{
-        let res = await axios.delete(`https://rentify-project-1.onrender.com/listing/${id}`,  {withCredentials : true});
+        let res = await axios.delete(`https://rentify-project-sw8s.onrender.com//listing/${id}`,  {withCredentials : true});
         toast.success(res.data.message);
         navigate('/listing');
     }catch(err){
@@ -29,7 +29,7 @@ function ListingDetails() {
   useEffect(() => {
     const fetchData = async () => {
       try{
-        const res = await axios.get(`https://rentify-project-1.onrender.com/listing/${id}`,  {withCredentials : true});
+        const res = await axios.get(`https://rentify-project-sw8s.onrender.com/listing/${id}`,  {withCredentials : true});
         setListing(res.data); 
         setReviews(res.data.reviews);
       }catch(err){

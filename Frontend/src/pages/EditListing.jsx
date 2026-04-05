@@ -22,7 +22,7 @@ const EditListing = () => {
   // fetch existing data
   useEffect(() => {
     const fetchListing = async () => {
-      const res = await axios.get(`https://rentify-project-1.onrender.com/listing/${id}`, { withCredentials: true });
+      const res = await axios.get(`https://rentify-project-sw8s.onrender.com/listing/${id}`, { withCredentials: true });
       setFormData(res.data);
     };
     fetchListing();
@@ -52,7 +52,7 @@ const EditListing = () => {
     }
 
     try {
-      await axios.put(`https://rentify-project-1.onrender.com/listing/${id}`, data, { withCredentials: true });
+      await axios.put(`https://rentify-project-sw8s.onrender.com/listing/${id}`, data, { withCredentials: true });
       toast.success("Listing Updated Successfully ✅");
       navigate(`/listing/${id}`);
     } catch (err) {

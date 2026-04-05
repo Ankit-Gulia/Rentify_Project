@@ -30,7 +30,7 @@ export default function Signup() {
     }
 
     try {
-      const res = await axios.post("https://rentify-project-1.onrender.com/signup", formData, {withCredentials : true});
+      const res = await axios.post("https://rentify-project-sw8s.onrender.com/signup", formData, {withCredentials : true});
       setUser(res.data.user);
       toast.success(res.data.message);
       setFormData({

@@ -24,7 +24,7 @@ const Reviews = ({ reviews, setReviews, id }) => {
 
     //sending reviews to backend.
     try {
-      let res = await axios.post(`https://rentify-project-1.onrender.com/listing/${id}/review`, form, {withCredentials : true});
+      let res = await axios.post(`https://rentify-project-sw8s.onrender.com/listing/${id}/review`, form, {withCredentials : true});
       setReviews((prev) => [...prev, res.data.response]);
       toast.success(res.data.message);
       setForm({
@@ -48,7 +48,7 @@ const Reviews = ({ reviews, setReviews, id }) => {
 
   const handleDelete = async(rev_id) => {
     try{
-     let res =  await axios.delete(`https://rentify-project-1.onrender.com/listing/${id}/review/${rev_id}`, {withCredentials : true});
+     let res =  await axios.delete(`https://rentify-project-sw8s.onrender.com/listing/${id}/review/${rev_id}`, {withCredentials : true});
       toast.success(res.data.message);
       setReviews(prev => prev.filter(rev => rev._id !== rev_id));
     }catch(err){

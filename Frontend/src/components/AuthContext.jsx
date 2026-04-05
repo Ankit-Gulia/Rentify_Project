@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
   // run once when app loads
   useEffect(() => {
    const fetchUser = async() => {
-    await axios.get("https://rentify-project-1.onrender.com/api/auth/check", { withCredentials: true })
+    await axios.get("https://rentify-project-sw8s.onrender.com/api/auth/check", { withCredentials: true })
       .then(res => {
         if (res.data.isAuthenticated) {
           setUser(res.data.user); // user logged in

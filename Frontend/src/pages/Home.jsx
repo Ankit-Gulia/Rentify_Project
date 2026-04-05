@@ -12,7 +12,7 @@ const Home = () => {
     useEffect(() => {
         const fetch = async () => {
             try {
-                let res = await axios.get('https://rentify-project-1.onrender.com/listing', {withCredentials : true});
+                let res = await axios.get('https://rentify-project-sw8s.onrender.com/listing', {withCredentials : true});
                 setListings(res.data);
             } catch (err) {
                 console.log(err)

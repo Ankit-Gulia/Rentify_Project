@@ -39,9 +39,9 @@ const AddListing = () => {
     data.append("image", file);
 
     try {
-      const res = await axios.post("https://rentify-project-1.onrender.com/listing", data, { withCredentials: true });
+      const res = await axios.post("https://rentify-project-sw8s.onrender.com/listing", data, { withCredentials: true });
       toast.success(res.data.message);
-      navigate("https://rentify-project-1.onrender.com/listing");
+      navigate("/listing");
 
     } catch (err) {
       toast.error(err.response?.data?.message);

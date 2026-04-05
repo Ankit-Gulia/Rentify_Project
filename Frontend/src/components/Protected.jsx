@@ -9,7 +9,7 @@ function ProtectedRoute({ children }) {
   const location = useLocation();
 
   useEffect(() => {
-    axios.get("https://rentify-project-1.onrender.com/api/auth/check", { withCredentials: true })
+    axios.get("https://rentify-project-sw8s.onrender.com/api/auth/check", { withCredentials: true })
       .then(res => {
         // console.log(res.data);
         setIsAuth(res.data.isAuthenticated);
