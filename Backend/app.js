@@ -26,7 +26,7 @@ const Main = async () => {
 app.set("trust proxy", 1);
 
 //Express middlewares -> 
-app.use(cors({ origin: 'https://rentify-project-roan.vercel.app', credentials: true }));
+app.use(cors({ origin: 'https://rentify-project-grsgch35g-ankit-gulias-projects.vercel.app', credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 app.use(session({
