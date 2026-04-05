@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from 'react'
 import { useParams, Link, useSearchParams } from 'react-router-dom'
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import Reviews from '../Reviews';
+import Reviews from '../components/Reviews';
 import { AuthContext } from "../components/AuthContext";
 import toast from "react-hot-toast";
 
