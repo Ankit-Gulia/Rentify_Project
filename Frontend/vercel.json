@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "src": "^/$",
+      "dest": "/listing"
+    },
+    {
+      "src": "^/(?!assets/|favicon.ico|robots.txt)(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
+
