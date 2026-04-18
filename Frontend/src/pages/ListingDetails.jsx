@@ -17,7 +17,7 @@ function ListingDetails() {
 
   const handleDelete = async () => {
     try{
-        let res = await axios.delete(`https://rentify-project-sw8s.onrender.com//listing/${id}`,  {withCredentials : true});
+        let res = await axios.delete(`https://rentify-project-sw8s.onrender.com/listing/${id}`,  {withCredentials : true});
         toast.success(res.data.message);
         navigate('/listing');
     }catch(err){
