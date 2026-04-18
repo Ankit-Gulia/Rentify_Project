@@ -65,7 +65,7 @@ function ListingDetails() {
 
       {/* 📄 Info */}
       <div className="mt-6">
-        <span className="text-3xl text-gray-800">Hosted by : @{listing.owner.username}</span>
+        <span className="text-2xl text-gray-500 mt-1">Hosted by : @{listing.owner.username}</span>
         <p className="text-gray-500 mt-1">{listing.title}</p>
         <p className="text-gray-500 mt-1">{listing.location}</p>
 

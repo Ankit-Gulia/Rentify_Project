@@ -112,10 +112,11 @@ const Reviews = ({ reviews, setReviews, id }) => {
               key={rev._id}
               className="bg-gray-100 p-5 rounded-xl mb-5"
             >
+              <p className="text-gray-700 my-4  ">~@{rev.author.username}</p>
+
               <div className="text-yellow-500 text-2xl">
                 {renderStars(rev.rating)}
               </div>
-              <h3 className="mt-5">Created by : {rev.author.username}</h3>
               <p className="text-gray-700 my-4  ">Comment : {rev.comment}</p>
 
               {user?._id === rev?.author?._id && (
