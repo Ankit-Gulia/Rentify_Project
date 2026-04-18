@@ -30,7 +30,7 @@ const Navbar = () => {
       </h1>
 
       {/* 🔍 Search Bar */}
-      <div className="hidden md:flex items-center border rounded-full px-4 py-2 shadow-sm hover:shadow-md transition">
+      {/* <div className="hidden md:flex items-center border rounded-full px-4 py-2 shadow-sm hover:shadow-md transition">
         <input
           type="text"
           placeholder="Search city..."
@@ -39,7 +39,7 @@ const Navbar = () => {
         <button className="bg-red-500 text-white px-3 py-1 rounded-full">
           Search
         </button>
-      </div>
+      </div> */}
 
       {/* 👤 Right Section */}
       <div className="flex items-center gap-4">
@@ -64,9 +64,11 @@ const Navbar = () => {
             Logout
           </button>
 
-          <p className="cursor-pointer bg-yellow-200 hover:text-grey-600">
-            {user.username.toUpperCase()}
+          <i>
+          <p className="cursor-pointer hover:text-grey-600">
+            @{user.username.toUpperCase()}
           </p>
+          </i>
           </>
         ) : (
           <>

@@ -65,7 +65,7 @@ function ListingDetails() {
 
       {/* 📄 Info */}
       <div className="mt-6">
-        <span className="text-2xl text-gray-500 mt-1">Hosted by : @{listing.owner.username}</span>
+        <span className="text-2xl text-gray-500 my-2">Hosted by : @{listing.owner.username}</span>
         <p className="text-gray-500 mt-1">{listing.title}</p>
         <p className="text-gray-500 mt-1">{listing.location}</p>
 
@@ -92,10 +92,10 @@ function ListingDetails() {
         </>
       )}
 
-        {/* 📞 Contact Button */}
+        {/* 📞 Contact Button
         <button className="mt-6 bg-red-500 text-white px-6 py-2 rounded-xl hover:bg-red-600 transition">
           Contact Owner
-        </button>
+        </button> */}
       </div>
 
       <Reviews reviews={reviews} setReviews={setReviews} id={id}/>
